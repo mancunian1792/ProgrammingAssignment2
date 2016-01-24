@@ -3,6 +3,10 @@
 
 ## Write a short comment describing this function
 
+## The function is used to cache the valuue of the matrix
+## and there are four functions created which is used to set,
+## get ,set the inverse and get the inverse.
+
 makeCacheMatrix <- function(x = matrix()) {
 
 m<-null
@@ -19,7 +23,12 @@ list(set=set,get=get,setinv=setinv,getinv=getinv)
 }
 
 
-## Write a short comment describing this function
+## Write a short comment describing this function 
+
+## This function takes in a matrix and attempts to solve the simultaneous equations
+## by getting hold of the inverse of  the matrix.Now ,this inverse can be a cached value.
+## Use this inverse  to solve the simultaneous equations represented via the matrix.
+
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
