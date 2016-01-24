@@ -27,7 +27,8 @@ list(set=set,get=get,setinv=setinv,getinv=getinv)
 
 ## This function takes in a matrix and attempts to solve the simultaneous equations
 ## by getting hold of the inverse of  the matrix.Now ,this inverse can be a cached value.
-## Use this inverse  to solve the simultaneous equations represented via the matrix.
+## If not,use the solve method to compute the inverse.To do this,we get the matrix(which again can be cached)
+## and use solve and set the inverse
 
 
 cacheSolve <- function(x, ...) {
@@ -40,6 +41,7 @@ if(!is.null(m)){
 
 
 }
+
 
 mat<-x$get
 m<-solve(mat)
